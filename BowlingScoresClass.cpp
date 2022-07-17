@@ -112,7 +112,7 @@ class Bowler
         return true;
     }
 
-    // This function should take no parameters. It should fill the array of structures data member with the average score of each bowler.
+    // It should fill the array of structures data member with the average score of each bowler.
     void GetAverageScore()
     {
         // One dimension array
