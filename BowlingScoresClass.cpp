@@ -52,7 +52,7 @@ class Bowler
         string name;
 
         // Bowler score array
-        int score[NUM_OF_SCORES];
+        int score[NUM_OF_SCORES] = {};
 
         // Bowler average
         int average = 0;
@@ -60,6 +60,7 @@ class Bowler
 
     // Txt file name
     string inputfilename;
+    // Instance
     BowlerData bowler[NUM_OF_BOWLERS];
 
     // Everything under this is public (aka can be accessed outside of this class)
@@ -71,8 +72,8 @@ class Bowler
         }
 
 
-    /* a Boolean returning function called GetBowlingData to readand store data into an array of structures.
-       The function should take as input parameters the file nameand an empty array of structures */
+    /* Read and store data into the array of the structures data member. 
+       This function should take no parameters and return a status of either success or failure (i.e. true or false).  */
     bool GetBowlingData()
     {
         // Opens file
@@ -111,8 +112,7 @@ class Bowler
         return true;
     }
 
-    /* a void function called GetAverageScore that is used to calculate the average bowling score.
-       The function should take as input the array of structures which it should fill with the average score of each bowler. */
+    // This function should take no parameters. It should fill the array of structures data member with the average score of each bowler.
     void GetAverageScore()
     {
         // One dimension array
@@ -131,7 +131,7 @@ class Bowler
         }
     }
 
-    // Output the results, i.e., bowler name, scores and average.
+    // Output the results, i.e. bowler name, scores and average. This function should take no parameters.
     void PrettyPrintResults()
     {
         cout << setfill(' ');
