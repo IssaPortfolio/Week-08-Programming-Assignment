@@ -73,7 +73,7 @@ class Bowler
 
 
     /* Read and store data into the array of the structures data member. 
-       This function should take no parameters and return a status of either success or failure (i.e. true or false).  */
+       This function should take no parameters and return a status of either success or failure (i.e. true or false). */
     bool GetBowlingData()
     {
         // Opens file
@@ -105,8 +105,8 @@ class Bowler
                 InputStream >> get_score;
                 bowler[row].score[column] = get_score;
             }
-
         }
+
         // Closes file and returns true
         InputStream.close();
         return true;
