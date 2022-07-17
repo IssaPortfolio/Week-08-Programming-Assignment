@@ -42,7 +42,7 @@ using namespace std;
 const int NUM_OF_BOWLERS = 10;
 const int NUM_OF_SCORES = 4;
 
-// Bowler Class
+// Bowler Class (base class, meaning nothing inherited) 
 class Bowler
 {
     // Private by default
@@ -163,6 +163,7 @@ int main()
     bowler.GetBowlingData();
     bowler.GetAverageScore();
     bowler.PrettyPrintResults();
+
     // Pauses console and "int main()" return 0 after function completion. 
     system("pause");
     return 0;
@@ -186,7 +187,7 @@ int main()
     The first quote, to me it implies that this string variable has a value I am supposed to set. Then, the second quote implies that the string variable
     gets it value from the passed value from main (which is what I believe I have done). So I am assuming that is what I am supposed to do.
 
-    One thing I was unsure about is a de-constructor. I don't think it's useful in this program, and if so, it would be used to close the txt file? But I
+    Another thing I was unsure about is a de-constructor. I don't think it's useful in this program, and if so, it would be used to close the txt file? But I
     have opted out of using it. 
 
 */
