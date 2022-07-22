@@ -36,6 +36,7 @@
 #include <iostream>   // GIVES "cin" AND "cout"
 #include <fstream>    // INPUTS/OUTPUTS TO A FILE
 #include <iomanip>    // GIVES "setfill(char)", "setw(int)" AND "setprecision(int)"
+#include <string>     // GIVES "string" DATA TYPE
 using namespace std;
 
 // CONSTANT VARIABLES
